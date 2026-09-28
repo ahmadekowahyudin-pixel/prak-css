@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- div_max_width.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Max Width</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .a,
+      .b {
+        background: #dbeafe;
+        border: 1px solid #2563eb;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      .a {
+        width: 600px;
+      }
+      .b {
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Max Width</h1>
+    <div class="a">
+      width: 600px (bisa membuat scroll horizontal di layar kecil)
+    </div>
+    <div class="b">max-width: 600px (menyusut mengikuti layar kecil)</div>
+    <p>Kecilkan jendela browser untuk melihat perbedaannya.</p>
+  </body>
+</html>

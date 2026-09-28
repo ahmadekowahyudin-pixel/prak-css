@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- pseudo_class2.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class 2 (Focus)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        input {
+            padding: 8px;
+            border: 2px solid #ccc;
+            margin: 5px 0;
+            outline: none
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            background: #eff6ff
+        }
+
+        input:disabled {
+            background: #e5e7eb
+        }
+
+        input:checked+label {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:focus, :disabled, :checked</h1><input type="text" placeholder="Klik saya (focus)"><br><input type="text"
+        placeholder="Disabled" disabled><br><input type="checkbox" id="c"><label for="c">Centang saya</label>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- text_white_space.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>White Space</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      p {
+        width: 250px;
+        border: 1px solid #333;
+        padding: 8px;
+        overflow: auto;
+      }
+      .a {
+        white-space: normal;
+      }
+      .b {
+        white-space: nowrap;
+      }
+      .c {
+        white-space: pre;
+      }
+      .d {
+        white-space: pre-wrap;
+      }
+      .e {
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="a">
+      normal: spasi dan baris baru diabaikan pada teks yang cukup panjang ini.
+    </p>
+    <p class="b">nowrap: teks tidak turun baris walaupun panjang sekali.</p>
+    <p class="c">pre: spasi dipertahankan baris baru juga</p>
+    <p class="d">
+      pre-wrap: spasi dipertahankan dan teks tetap bisa turun baris.
+    </p>
+    <p class="e">pre-line: spasi digabung tapi baris baru dipertahankan.</p>
+  </body>
+</html>

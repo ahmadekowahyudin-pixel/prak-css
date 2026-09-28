@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- hover_tooltip.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Tooltip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .tip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted #333;
+            cursor: help;
+            margin-top: 40px
+        }
+
+        .tip .text {
+            visibility: hidden;
+            width: 160px;
+            background: #111827;
+            color: #fff;
+            text-align: center;
+            padding: 6px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: .3s
+        }
+
+        .tip .text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border: 5px solid transparent;
+            border-top-color: #111827
+        }
+
+        .tip:hover .text {
+            visibility: visible;
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tooltip</h1>
+    <div class="tip">Arahkan ke sini<span class="text">Ini adalah tooltip</span></div>
+</body>
+
+</html>

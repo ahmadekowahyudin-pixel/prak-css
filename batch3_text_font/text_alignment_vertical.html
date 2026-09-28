@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- text_alignment_vertical.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Alignment Vertical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .box {
+        height: 100px;
+        width: 300px;
+        border: 1px solid #333;
+        margin-bottom: 10px;
+        background: #dbeafe;
+      }
+      .center {
+        line-height: 100px;
+        text-align: center;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .cell {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100px;
+        width: 300px;
+        border: 1px solid #333;
+        background: #fef3c7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vertical Alignment</h1>
+    <div class="box center">line-height = tinggi box</div>
+    <div class="box flex">Flexbox: align-items center</div>
+    <div class="cell">display:table-cell + vertical-align:middle</div>
+  </body>
+</html>

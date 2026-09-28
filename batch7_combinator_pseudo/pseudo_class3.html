@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- pseudo_class3.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class 3 (Struktural)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        li:first-child {
+            color: #dc2626;
+            font-weight: bold
+        }
+
+        li:last-child {
+            color: #16a34a;
+            font-weight: bold
+        }
+
+        li:nth-child(odd) {
+            background: #f3f4f6
+        }
+
+        li:nth-child(3) {
+            text-decoration: underline
+        }
+
+        p:only-child {
+            color: purple
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:first-child, :last-child, :nth-child</h1>
+    <ul>
+        <li>Satu</li>
+        <li>Dua</li>
+        <li>Tiga</li>
+        <li>Empat</li>
+        <li>Lima</li>
+    </ul>
+    <div>
+        <p>Satu-satunya anak (only-child)</p>
+    </div>
+</body>
+
+</html>

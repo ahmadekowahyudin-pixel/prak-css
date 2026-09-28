@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- position_text_dalam_gambar.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks dalam Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .img {
+            position: relative;
+            width: 300px
+        }
+
+        .img img {
+            display: block;
+            width: 100%
+        }
+
+        .tl {
+            position: absolute;
+            top: 8px;
+            left: 12px;
+            color: #fff;
+            background: rgba(0, 0, 0, .5);
+            padding: 4px 8px
+        }
+
+        .bl {
+            position: absolute;
+            bottom: 8px;
+            left: 12px;
+            color: #fff;
+            background: rgba(0, 0, 0, .5);
+            padding: 4px 8px
+        }
+
+        .c {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px #000
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teks di dalam Gambar</h1>
+    <div class="img"><img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23dbeafe'/%3E%3Ccircle cx='90' cy='80' r='40' fill='%23f59e0b'/%3E%3Cpath d='M0 200 L110 100 L190 170 L240 120 L300 190 V200Z' fill='%2316a34a'/%3E%3C/svg%3E"
+            alt="Pemandangan">
+        <div class="tl">Kiri atas</div>
+        <div class="bl">Kiri bawah</div>
+        <div class="c">Tengah</div>
+    </div>
+</body>
+
+</html>

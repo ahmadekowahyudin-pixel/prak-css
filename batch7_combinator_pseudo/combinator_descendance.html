@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- combinator_descendance.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Descendant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        div p {
+            color: #fff;
+            background: #2563eb;
+            padding: 8px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descendant (spasi)</h1>
+    <div>
+        <p>Paragraf langsung dalam div (terkena)</p>
+        <section>
+            <p>Paragraf cucu dalam div (juga terkena)</p>
+        </section>
+    </div>
+    <p>Paragraf di luar div (tidak terkena)</p>
+</body>
+
+</html>

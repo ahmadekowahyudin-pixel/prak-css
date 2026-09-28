@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- background_gambar_repeat.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Gambar Repeat</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      div {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' fill='%23dbeafe'/%3E%3Ccircle cx='20' cy='20' r='10' fill='%232563eb'/%3E%3C/svg%3E");
+        height: 100px;
+        border: 1px solid #999;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      .r {
+        background-repeat: repeat;
+      }
+      .rx {
+        background-repeat: repeat-x;
+      }
+      .ry {
+        background-repeat: repeat-y;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="r">repeat (default): berulang horizontal &amp; vertikal</div>
+    <div class="rx">repeat-x: berulang horizontal saja</div>
+    <div class="ry">repeat-y: berulang vertikal saja</div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- dropdown_menu.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #1f2937;
+            overflow: hidden
+        }
+
+        li {
+            float: left
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: #fff;
+            padding: 14px 18px;
+            text-decoration: none
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background: #2563eb
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #f9fafb;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+            z-index: 1
+        }
+
+        .dropdown-content a {
+            color: #111827;
+            padding: 12px 16px;
+            display: block;
+            text-align: left
+        }
+
+        .dropdown-content a:hover {
+            background: #dbeafe
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block
+        }
+
+        ul {
+            overflow: visible
+        }
+
+        ul::after {
+            content: "";
+            display: table;
+            clear: both
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Berita</a></li>
+        <li class="dropdown"><a href="#" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a></div>
+        </li>
+    </ul>
+    <p style="padding:20px">Arahkan mouse ke "Dropdown".</p>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- position_overlapping.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Overlapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .wrap {
+            position: relative;
+            height: 220px
+        }
+
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            color: #fff;
+            padding: 10px
+        }
+
+        .a {
+            background: #2563eb;
+            top: 20px;
+            left: 20px;
+            z-index: 1
+        }
+
+        .b {
+            background: #dc2626;
+            top: 60px;
+            left: 90px;
+            z-index: 3
+        }
+
+        .c {
+            background: #16a34a;
+            top: 100px;
+            left: 160px;
+            z-index: 2
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Overlapping (z-index)</h1>
+    <div class="wrap">
+        <div class="box a">z-index 1</div>
+        <div class="box b">z-index 3</div>
+        <div class="box c">z-index 2</div>
+    </div>
+</body>
+
+</html>

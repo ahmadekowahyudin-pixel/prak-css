@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- margin_inherit.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Inherit</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .parent {
+        margin-left: 100px;
+        background: #fef3c7;
+        border: 1px solid #f59e0b;
+        padding: 10px;
+      }
+      .child {
+        margin-left: inherit;
+        background: #dbeafe;
+        border: 1px solid #2563eb;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Margin Inherit</h1>
+    <div class="parent">
+      Parent margin-left: 100px
+      <div class="child">
+        Child margin-left: inherit (mewarisi 100px dari parent)
+      </div>
+    </div>
+  </body>
+</html>

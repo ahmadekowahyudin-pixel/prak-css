@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- dropdown_image.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px
+        }
+
+        .dropdown img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            border: 3px solid #2563eb
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 90px;
+            background: #f9fafb;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+            z-index: 1
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px 14px;
+            color: #111827;
+            text-decoration: none
+        }
+
+        .menu a:hover {
+            background: #dbeafe
+        }
+
+        .dropdown:hover .menu {
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown"><img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23dbeafe'/%3E%3Ccircle cx='90' cy='80' r='40' fill='%23f59e0b'/%3E%3Cpath d='M0 200 L110 100 L190 170 L240 120 L300 190 V200Z' fill='%2316a34a'/%3E%3C/svg%3E"
+            alt="Profil">
+        <div class="menu"><a href="#">Profil</a><a href="#">Pengaturan</a><a href="#">Keluar</a></div>
+    </div>
+    <p style="padding:0 20px">Arahkan mouse ke gambar.</p>
+</body>
+
+</html>

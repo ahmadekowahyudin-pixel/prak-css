@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- margin_collapse.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapse</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .b {
+        padding: 15px;
+        color: #fff;
+      }
+      .a {
+        background: #2563eb;
+        margin-bottom: 50px;
+      }
+      .b {
+        background: #dc2626;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Margin Collapse</h1>
+    <div class="a">Box A: margin-bottom 50px</div>
+    <div class="b">Box B: margin-top 30px</div>
+    <p>Jarak antara A dan B adalah 50px (yang terbesar), bukan 80px.</p>
+  </body>
+</html>

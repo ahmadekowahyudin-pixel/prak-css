@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- float_clear.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Clear</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        img {
+            width: 120px;
+            height: 80px
+        }
+
+        .f {
+            float: left;
+            width: 150px;
+            height: 100px;
+            background: #dbeafe;
+            border: 1px solid #2563eb;
+            margin-right: 10px
+        }
+
+        .nc {
+            background: #fef3c7;
+            padding: 10px
+        }
+
+        .c {
+            clear: both;
+            background: #dcfce7;
+            padding: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>clear</h1>
+    <div class="f">Float left</div>
+    <p class="nc">Paragraf tanpa clear mengalir di sebelah float.</p>
+    <p class="c">Paragraf dengan clear: both, turun di bawah float.</p>
+</body>
+
+</html>

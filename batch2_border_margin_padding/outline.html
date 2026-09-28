@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- outline.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outline</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      p {
+        padding: 10px;
+        margin: 20px 0;
+        border: 1px solid #999;
+      }
+      .a {
+        outline: 3px solid red;
+      }
+      .b {
+        outline: 3px dashed blue;
+        outline-offset: 8px;
+      }
+      .c {
+        outline-style: dotted;
+        outline-color: green;
+        outline-width: 4px;
+      }
+      input:focus {
+        outline: 3px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Outline</h1>
+    <p class="a">outline solid merah</p>
+    <p class="b">outline dashed dengan outline-offset 8px</p>
+    <p class="c">outline dotted hijau</p>
+    <input type="text" placeholder="Klik saya (focus)" />
+  </body>
+</html>

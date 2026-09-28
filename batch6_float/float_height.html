@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- float_height.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Height</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        img {
+            width: 120px;
+            height: 80px
+        }
+
+        .wrap {
+            border: 3px solid #333;
+            padding: 5px;
+            margin-bottom: 20px
+        }
+
+        .f {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: #dbeafe;
+            border: 1px solid #2563eb
+        }
+
+        .ov {
+            overflow: auto
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float dan Tinggi Parent</h1>
+    <p>Parent tanpa perbaikan (tinggi runtuh):</p>
+    <div class="wrap">
+        <div class="f">Float</div>
+    </div><br><br><br><br>
+    <p>Parent dengan overflow:auto (membungkus float):</p>
+    <div class="wrap ov">
+        <div class="f">Float</div>
+    </div>
+</body>
+
+</html>

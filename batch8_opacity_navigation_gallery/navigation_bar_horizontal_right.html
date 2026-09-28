@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- navigation_bar_horizontal_right.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Horizontal Kanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #1f2937;
+            overflow: hidden
+        }
+
+        li {
+            float: left
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            padding: 14px 18px;
+            text-decoration: none
+        }
+
+        li a:hover {
+            background: #2563eb
+        }
+
+        li a.active {
+            background: #16a34a
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#">Beranda</a></li>
+        <li><a href="#">Berita</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li style="float:right"><a href="#">Tentang</a></li>
+    </ul>
+    <p style="padding:20px">Item "Tentang" berada di kanan (float:right).</p>
+</body>
+
+</html>

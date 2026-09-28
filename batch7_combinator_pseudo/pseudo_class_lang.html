@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- pseudo_class_lang.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Lang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        q:lang(id) {
+            quotes: "«" "»"
+        }
+
+        q:lang(en) {
+            quotes: "\201C" "\201D"
+        }
+
+        p:lang(id) {
+            color: #dc2626
+        }
+
+        p:lang(en) {
+            color: #2563eb
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:lang</h1>
+    <p lang="id">Ini teks bahasa Indonesia.</p>
+    <p lang="en">This is English text.</p><q lang="id">Kutipan Indonesia</q><br><q lang="en">English quote</q>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- pseudo_element_multiple.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element Multiple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        p {
+            width: 400px;
+            line-height: 1.5
+        }
+
+        p::first-letter {
+            font-size: 200%;
+            color: #dc2626
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: #2563eb
+        }
+
+        p::before {
+            content: "[Awal] ";
+            color: green
+        }
+
+        p::after {
+            content: " [Akhir]";
+            color: purple
+        }
+
+        p::selection {
+            background: #fde047
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Beberapa Pseudo-element</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.</p>
+    <p>Blok teks kedua untuk ::before dan ::after.</p>
+</body>
+
+</html>

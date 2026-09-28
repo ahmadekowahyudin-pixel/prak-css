@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- opacity_transparent_box_text_in.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Box Text In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .wrap {
+            position: relative;
+            width: 320px;
+            height: 200px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect width='300' height='200' fill='%23dbeafe'/%3E%3Ccircle cx='90' cy='80' r='40' fill='%23f59e0b'/%3E%3Cpath d='M0 200 L110 100 L190 170 L240 120 L300 190 V200Z' fill='%2316a34a'/%3E%3C/svg%3E") center/cover
+        }
+
+        .box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .6);
+            color: #fff;
+            padding: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teks dalam Box Transparan</h1>
+    <div class="wrap">
+        <div class="box">Teks tetap jelas di atas gambar dengan background semi-transparan.</div>
+    </div>
+</body>
+
+</html>

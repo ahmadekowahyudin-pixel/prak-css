@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- background_gambar_posisi.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Gambar Posisi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      div {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%23fef3c7' stroke='%23f59e0b' stroke-width='4'/%3E%3Ccircle cx='30' cy='30' r='16' fill='%23ef4444'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        height: 150px;
+        border: 1px solid #999;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      .a {
+        background-position: right top;
+      }
+      .b {
+        background-position: center center;
+      }
+      .c {
+        background-position: left bottom;
+      }
+      .d {
+        background-position: 50px 30px;
+      }
+      .e {
+        background-position: 75% 25%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="a">right top</div>
+    <div class="b">center center</div>
+    <div class="c">left bottom</div>
+    <div class="d">50px 30px</div>
+    <div class="e">75% 25%</div>
+  </body>
+</html>

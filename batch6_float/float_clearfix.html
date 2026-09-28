@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- float_clearfix.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Clearfix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        img {
+            width: 120px;
+            height: 80px
+        }
+
+        .wrap {
+            border: 3px solid #dc2626;
+            margin-bottom: 20px
+        }
+
+        .f {
+            float: left;
+            width: 100px;
+            height: 80px;
+            background: #dbeafe;
+            margin: 5px
+        }
+
+        .cf::after {
+            content: "";
+            display: table;
+            clear: both
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clearfix</h1>
+    <p>Tanpa clearfix: wrapper runtuh.</p>
+    <div class="wrap">
+        <div class="f">Float</div>
+        <div class="f">Float</div>
+    </div>
+    <p>Dengan clearfix: wrapper membungkus float.</p>
+    <div class="wrap cf">
+        <div class="f">Float</div>
+        <div class="f">Float</div>
+    </div>
+</body>
+
+</html>

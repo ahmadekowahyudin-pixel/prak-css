@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- table_responsive.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .wrap {
+            overflow-x: auto;
+            border: 1px solid #ccc
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 600px
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            white-space: nowrap;
+            text-align: left
+        }
+
+        th {
+            background: #f3f4f6
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabel Responsive</h1>
+    <p>Kecilkan jendela: tabel bisa digeser horizontal.</p>
+    <div class="wrap">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Kota</th>
+                <th>Pekerjaan</th>
+                <th>Telepon</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Andi</td>
+                <td>andi@example.com</td>
+                <td>Pekanbaru</td>
+                <td>Mahasiswa</td>
+                <td>0812-0000-0001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Budi</td>
+                <td>budi@example.com</td>
+                <td>Medan</td>
+                <td>Desainer</td>
+                <td>0812-0000-0002</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

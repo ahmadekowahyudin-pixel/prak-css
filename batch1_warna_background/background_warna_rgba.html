@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- background_warna_rgba.html -->
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Warna RGBA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .wrap {
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' fill='%23dbeafe'/%3E%3Ccircle cx='20' cy='20' r='10' fill='%232563eb'/%3E%3C/svg%3E");
+      padding: 20px;
+      width: 340px;
+    }
+
+    .box {
+      padding: 20px;
+      margin-bottom: 10px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .a1 {
+      background-color: rgba(37, 99, 235, 1);
+    }
+
+    .a2 {
+      background-color: rgba(37, 99, 235, 0.6);
+    }
+
+    .a3 {
+      background-color: rgba(37, 99, 235, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Background RGBA</h1>
+  <p>Hanya background yang transparan, teks tetap jelas.</p>
+  <div class="wrap">
+    <div class="box a1">rgba(37,99,235,<b>1</b>)</div>
+    <div class="box a2">rgba(37,99,235,<b>0.6</b>)</div>
+    <div class="box a3">rgba(37,99,235,<b>0.3</b>)</div>
+  </div>
+</body>
+
+</html>

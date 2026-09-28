@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- text_direction.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Direction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      p {
+        border: 1px solid #ccc;
+        padding: 8px;
+        width: 400px;
+      }
+      .ltr {
+        direction: ltr;
+      }
+      .rtl {
+        direction: rtl;
+      }
+      .uni {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="ltr">direction: ltr (kiri ke kanan)</p>
+    <p class="rtl">direction: rtl (kanan ke kiri)</p>
+    <p class="uni">unicode-bidi: bidi-override, teks dibalik</p>
+  </body>
+</html>

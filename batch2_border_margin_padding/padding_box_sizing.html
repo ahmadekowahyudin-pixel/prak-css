@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- padding_box_sizing.html -->
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding Box Sizing</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      div {
+        width: 300px;
+        background: #dbeafe;
+        border: 1px solid #2563eb;
+        padding: 25px;
+        margin-bottom: 15px;
+      }
+      .a {
+        box-sizing: content-box;
+      }
+      .b {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Sizing</h1>
+    <div class="a">content-box: total lebar 350px + border</div>
+    <div class="b">border-box: total lebar tetap 300px</div>
+  </body>
+</html>

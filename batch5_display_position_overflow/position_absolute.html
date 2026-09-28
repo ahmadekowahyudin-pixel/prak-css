@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- position_absolute.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .parent {
+            position: relative;
+            height: 250px;
+            border: 2px solid #333;
+            background: #f3f4f6
+        }
+
+        .child {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 150px;
+            padding: 10px;
+            background: #dbeafe;
+            border: 2px solid #2563eb
+        }
+    </style>
+</head>
+
+<body>
+    <h1>position: absolute</h1>
+    <div class="parent">Parent (position: relative)<div class="child">Child absolute: top 30px, right 30px terhadap
+            parent</div>
+    </div>
+</body>
+
+</html>

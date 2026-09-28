@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- hover.html -->
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px
+        }
+
+        .box {
+            width: 200px;
+            padding: 20px;
+            background: #dbeafe;
+            border: 2px solid #2563eb;
+            transition: .3s
+        }
+
+        .box:hover {
+            background: #2563eb;
+            color: #fff;
+            transform: scale(1.05)
+        }
+
+        button:hover {
+            background: #dc2626;
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:hover</h1>
+    <div class="box">Arahkan mouse ke kotak ini</div><br><button>Tombol hover</button>
+</body>
+
+</html>
